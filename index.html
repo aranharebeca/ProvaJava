@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="screen-1">
+    <h1> Cálculo de IMC</h1>
+    <div class="forms">
+      <p> Peso (kg)</p>
+      <input id="peso" type="number" step="0.1">
+      <p>Altura (m)</p>
+      <input id="altura" type="number" step="0.01">
+    </div>
+    <h2><button id="calcularBtn">Calcular IMC <img src="assets/vetor.svg"></button></h2>
+  </div>
+
+  <div class="overlay hide" id="overlay"></div>
+
+  <div class="modal hide" id="modal">
+    <img src="assets/close.svg" id="closeBtn">
+    <h1 id="resultadoIMC"></h1>
+  </div>
+
+  <div class="error-message hide" id="errorMessage">Digite somente números</div>
+
+</body>
+
+</html>
